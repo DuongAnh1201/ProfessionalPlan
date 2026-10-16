@@ -1,0 +1,30 @@
+name: Weekly review
+description: End-of-week check-in on the plan
+title: "[Review] Week of YYYY-MM-DD"
+labels: ["type:review"]
+body:
+  - type: textarea
+    id: done
+    attributes:
+      label: Completed this week
+    validations:
+      required: true
+  - type: textarea
+    id: blocked
+    attributes:
+      label: Blocked / slipped (and why)
+  - type: textarea
+    id: next
+    attributes:
+      label: Top 3 priorities next week
+      value: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+  - type: textarea
+    id: changes
+    attributes:
+      label: Plan changes
+      description: Scope, dates, or priorities that changed.

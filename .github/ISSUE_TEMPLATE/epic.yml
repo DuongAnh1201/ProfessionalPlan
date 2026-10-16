@@ -1,0 +1,37 @@
+name: Epic
+description: A goal or milestone made of several tasks
+title: "[Epic] "
+labels: ["type:epic"]
+body:
+  - type: textarea
+    id: objective
+    attributes:
+      label: Objective
+      description: Why this matters, in 1–3 sentences.
+    validations:
+      required: true
+  - type: textarea
+    id: success
+    attributes:
+      label: Success metrics
+      description: How you'll know this epic is done.
+      value: |
+        -
+    validations:
+      required: true
+  - type: textarea
+    id: tasks
+    attributes:
+      label: Tasks
+      description: Add task issues as they are created (use sub-issues or a checklist).
+      value: |
+        - [ ] #
+  - type: input
+    id: target
+    attributes:
+      label: Target date
+      placeholder: YYYY-MM-DD
+  - type: textarea
+    id: risks
+    attributes:
+      label: Risks / dependencies
